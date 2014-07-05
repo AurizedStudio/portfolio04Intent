@@ -1,7 +1,7 @@
 # CODING Portfolio04
 
 This is 4 pages portfolio site.  
-including home / blog / portfolio / contact / 
+including home / blog / portfolio / contact.
 
 ## Design
 
@@ -10,7 +10,7 @@ Source PSDs are from [INTENT PSD THEME](http://www.bestpsdfreebies.com/freebie/p
 
 ## Coding
 
-Then I did coding for practice.
+Then I did coding for practice. ( I'm doing right now...)
 
 ## Licence
 
