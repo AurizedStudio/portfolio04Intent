@@ -36,7 +36,7 @@ grunt.initConfig({
 	},
 	esteWatch: {
 		options: {
-			dirs: ['scss/'],
+			dirs: ['scss/','scss/mixins/','scss/owl/'],
 			livereload: {
 				enabled: false
 			}
@@ -56,7 +56,8 @@ grunt.initConfig({
 			},
 			options: {
 				watchTask: true,
-				proxy: "192.168.0.5:8000"
+				proxy: "192.168.0.8:8000"
+//				proxy: "192.168.0.5:8000"
 //				proxy: "192.168.1.185:8000"
 //				proxy: "192.168.0.5:8000"
 //				proxy: "192.168.24.53:8000"
