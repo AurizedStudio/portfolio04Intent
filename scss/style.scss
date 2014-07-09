@@ -6,6 +6,7 @@
 @import "normalize";
 @import "print";
 @import "glyphicons";
+@import "iconfont";
 
 // Core CSS
 @import "scaffolding";
@@ -49,7 +50,10 @@
 @import "utilities";
 @import "responsive-utilities";
 
-// OWL
+// Main
+@import "main";
+
+// OWL slider
 @import "owl/owl.carousel";
 @import "owl/owl.animate";
 @import "owl/owl.autoheight";
