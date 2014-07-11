@@ -1,9 +1,12 @@
 
-/* font追加 */
+/* 
+ * 	  font追加
+ */
+/* ciロゴ、gnav */
 @import url(http://fonts.googleapis.com/css?family=Bitter);
 
 /* 
- * 	header
+ * 	  .header
  */
 .sns {
     background-color: $gray-darkest;
@@ -88,3 +91,45 @@
         }
     }
 }
+
+/* 
+ * 	  .bg-pagetheme（テーマ背景画像）
+ */
+.bg-pagetheme {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1200px 177px; // 2400 354
+    height: 177px;
+    .contact-page & {
+        background-image: url(../img/bg-pagetheme-contact.jpg);
+    }
+}
+
+/* 
+ * 	  .main
+ */
+.main {
+    @include clearfix();
+    margin: -30px auto 0;
+    width: $width-container;
+}
+.main-header {
+    background-color: $gray-darker;
+}
+.main-header-h1 {
+    margin: 0;
+    padding: 39px 37px;
+    line-height: $line-height-xsmall;
+    font-size: $font-size-h1;
+    color: #fff;
+    small {
+        font-size: $font-size-base;
+        color: $gray-lighter;
+    }
+}
+.main-contents {
+    padding: 25px;
+    border-right: 1px $gray-lightest solid;
+    border-left: 1px $gray-lightest solid;
+}
+

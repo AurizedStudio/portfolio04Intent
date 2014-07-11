@@ -1341,23 +1341,23 @@ h6 .small, .h6 small,
 }
 
 h1, .h1 {
-  font-size: 36px;
-}
-
-h2, .h2 {
   font-size: 30px;
 }
 
-h3, .h3 {
+h2, .h2 {
   font-size: 24px;
 }
 
-h4, .h4 {
+h3, .h3 {
   font-size: 18px;
 }
 
-h5, .h5 {
+h4, .h4 {
   font-size: 14px;
+}
+
+h5, .h5 {
+  font-size: 12px;
 }
 
 h6, .h6 {
@@ -3845,9 +3845,12 @@ input[type="button"].btn-block {
     display: none !important;
   }
 }
-/* font追加 */
 /* 
- * 	header
+ * 	  font追加
+ */
+/* ciロゴ、gnav */
+/* 
+ * 	  .header
  */
 .sns {
   background-color: #24272a;
@@ -3964,6 +3967,56 @@ input[type="button"].btn-block {
 .navbar-gnav a:hover {
   color: #ea5a4b;
   text-decoration: none;
+}
+
+/* 
+ * 	  .bg-pagetheme（テーマ背景画像）
+ */
+.bg-pagetheme {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 1200px 177px;
+  height: 177px;
+}
+.contact-page .bg-pagetheme {
+  background-image: url(../img/bg-pagetheme-contact.jpg);
+}
+
+/* 
+ * 	  .main
+ */
+.main {
+  margin: -30px auto 0;
+  width: 940px;
+}
+.main:before, .main:after {
+  content: " ";
+  display: table;
+}
+.main:after {
+  clear: both;
+}
+
+.main-header {
+  background-color: #282b2e;
+}
+
+.main-header-h1 {
+  margin: 0;
+  padding: 39px 37px;
+  line-height: 0.8;
+  font-size: 30px;
+  color: #fff;
+}
+.main-header-h1 small {
+  font-size: 14px;
+  color: #adadad;
+}
+
+.main-contents {
+  padding: 25px;
+  border-right: 1px #dfdfdf solid;
+  border-left: 1px #dfdfdf solid;
 }
 
 /* 
