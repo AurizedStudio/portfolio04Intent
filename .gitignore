@@ -5215,3 +5215,13 @@ node_modules/grunt-contrib-watch/tasks/watch.js
 node_modules/grunt-contrib-watch/tasks/lib/livereload.js
 node_modules/grunt-contrib-watch/tasks/lib/taskrun.js
 node_modules/grunt-contrib-watch/tasks/lib/taskrunner.js
+c/bg-pagetheme.psd
+c/readme.txt
+c/jpg/intent_blog.jpg
+c/jpg/intent_contact.jpg
+c/jpg/intent_home.jpg
+c/jpg/intent_portfolio.jpg
+c/psd/blog.psd
+c/psd/contact.psd
+c/psd/home.psd
+c/psd/portfolio.psd
