@@ -11,13 +11,14 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-darker:            lighten(#000, 13.5%) !default; // #222
-$gray-dark:              lighten(#000, 20%) !default;   // #333
-$gray:                   lighten(#000, 33.5%) !default; // #555
-$gray-light:             lighten(#000, 46.7%) !default; // #777
-$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+$gray-darkest:    #24272a; // header,footer bg
+$gray-darker:     #282b2e; // h1 bg
+$gray-dark:        #252525; // normal text, gnav
+$gray:                 #464646;
+$gray-light:        #5c5c5c;
+$gray-lighter:     #adadad; // footer text
 
-$brand-primary:         #428bca !default;
+$brand-primary: #ea5a4b; // Intent Red
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
@@ -29,15 +30,17 @@ $brand-danger:          #d9534f !default;
 //## Settings for some of the most global styles.
 
 // ** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:          #fbfbfb; // Intent BG
 // ** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:        $gray-dark !default;
 
 // ** Global textual link color.
 $link-color:            $brand-primary !default;
 // ** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%) !default;
 
+// container width
+$width-container: 940px;
 
 //== Typography
 //
@@ -50,8 +53,10 @@ $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !def
 $font-family-base:        $font-family-sans-serif !default;
 
 $font-size-base:          14px !default;
+$font-size-middle: ceil(($font-size-base * 1.14)); // 16px
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-xlarge: ceil(($font-size-base * 1.42)); // 20px
 
 $font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
 $font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px

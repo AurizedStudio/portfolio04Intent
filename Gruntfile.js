@@ -34,6 +34,10 @@ grunt.initConfig({
 			src: '<%= paths.dist %>/css/style.css',
 		}
 	},
+    watch: {
+        files: ['scss/*.scss', 'scss/mixins/*.scss', 'scss/owl/*.scss'],
+        tasks: ['sass']
+    },
 	esteWatch: {
 		options: {
 			dirs: ['scss/','scss/mixins/','scss/owl/'],
@@ -41,9 +45,9 @@ grunt.initConfig({
 				enabled: false
 			}
 		},
-		scss: function(filepath) {
+		'scss': function(filepath) {
 //			return ['less', 'autoprefixer']
-			return ['sass']
+			return ['sass:dist']
 		}
 	},
 	browserSync: {
@@ -69,7 +73,7 @@ grunt.initConfig({
 	}
 });
 
-grunt.registerTask('default', ['connect', 'browserSync', 'esteWatch']);
+grunt.registerTask('default', ['connect', 'browserSync', 'watch']);
 grunt.registerTask('stats', ['stylestats']);
 
 };
