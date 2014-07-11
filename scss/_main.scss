@@ -1,4 +1,90 @@
+
+/* font追加 */
+@import url(http://fonts.googleapis.com/css?family=Bitter);
+
 /* 
  * 	header
  */
- 
+.sns {
+    background-color: $gray-darkest;
+    @include clearfix();
+    ul {
+        float: right;
+        margin: 0;
+        padding: .75em 0;
+        font-size: $font-size-middle;
+    }
+    li {
+        float: left;
+        margin: 0 0 0 18px;
+    }
+    a {
+        padding: .75em 0;
+        color: #fff;
+        &:hover {
+            text-decoration: none;
+            color: $gray-lighter;
+        }
+    }
+}
+.sns-inner {
+    @include clearfix();
+    @include center-block();
+    width: $width-container;
+}
+.navbar {
+    @include clearfix();
+    padding: 10px 0;
+    box-shadow: 0.5px 0.866px 5px 0px rgba(0, 0, 0, 0.275);
+}
+.navbar-inner {
+    @include clearfix();
+    @include center-block();
+    width: $width-container;
+}
+.navbar-ci {
+    float: left;
+    font-family: 'Bitter', serif;
+}
+.navbar-ci-logo {
+    display: table-cell;
+    background-color: $brand-primary;
+    padding: 2px 13px;
+    text-align: center;
+    font-size: ($font-size-xlarge * 1.2);
+    color: #fff;
+}
+.navbar-ci-word {
+    display: table-cell;
+    padding: 0 0 0 8px;
+    font-size: $font-size-xlarge * 1.2;
+    color: #000;
+    span {
+        color: $brand-primary;
+    }
+}
+.navbar-gnav {
+    float: right;
+    ul {
+        margin: 10px 0 0 0;
+        padding: 0;
+        list-style: none;
+        font-weight: bold;
+    }
+    li {
+        float: left;
+        margin: 0 0 0 20px;
+        &.navbar-gnav-contact a {
+            .contact-page & {
+                color: $brand-primary;
+            }
+        }
+    }
+    a {
+        color: $gray-dark;
+        &:hover {
+            color: $brand-primary;
+            text-decoration: none;
+        }
+    }
+}

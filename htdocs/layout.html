@@ -28,35 +28,42 @@
 <script>window.html5 || document.write('<script src="js/html5shiv.js"><\/script>')</script>
 <![endif]-->
 </head>
-<body>
+<body class="contact-page">
 <p class="sr-only sr-only-focusable"><a href="#main">Skip to CONTENTS</a></p>
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <header>
     <div class="sns">
-        <ul>
-            <li><a href="#"><span class="icon-twitter"></span><span class="sr-only">twitter</span></a></li>
-            <li><a href="#"><span class="icon-facebook"></span><span class="sr-only">facebook</span></a></li>
-            <li><a href="#"><span class="icon-dribbble"></span><span class="sr-only">dribbble</span></a></li>
-            <li><a href="#"><span class="icon-feed"></span><span class="sr-only">rss</span></a></li>
-        </ul>
+        <div class="sns-inner">
+            <ul>
+                <li><a href="#"><span class="icon-twitter"></span><span class="sr-only">twitter</span></a></li>
+                <li><a href="#"><span class="icon-facebook"></span><span class="sr-only">facebook</span></a></li>
+                <li><a href="#"><span class="icon-dribbble"></span><span class="sr-only">dribbble</span></a></li>
+                <li><a href="#"><span class="icon-feed"></span><span class="sr-only">rss</span></a></li>
+            </ul>
+        </div>
     </div>
     <!-- / .sns -->
     <div class="navbar">
-        <p class="navbar-ci"><a href="#">Intent</a></p>
-        <nav class="navbar-gnav">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
+        <div class="navbar-inner">
+            <div class="navbar-ci"><a href="#">
+                <p class="navbar-ci-logo">i</p>
+                <p class="navbar-ci-word">Intent<span>.</span></p>
+                </a></div>
+            <nav class="navbar-gnav">
+                <ul>
+                    <li class="navbar-gnav-home"><a href="#">HOME</a></li>
+                    <li class="navbar-gnav-blog"><a href="#">BLOG</a></li>
+                    <li class="navbar-gnav-portfolio"><a href="#">PORTFOLIO</a></li>
+                    <li class="navbar-gnav-contact"><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <!-- / .navbar --> 
 </header>
-<section id="main">
+<section id="main"> 
     <!-- ページテーマ背景画像（下層）/ スライダー（トップ） -->
     <div class="bg-pagetheme"></div>
     <div class="container">
@@ -104,7 +111,6 @@
         </ul>
     </section>
 </footer>
-
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script> 
 <script src="js/bootstrap.min.js"></script>
