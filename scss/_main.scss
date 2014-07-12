@@ -1,8 +1,6 @@
 
-/* 
- * 	  font追加
- */
-/* ciロゴ、gnav */
+// font追加
+// ciロゴ、gnav
 @import url(http://fonts.googleapis.com/css?family=Bitter);
 
 /* 
@@ -98,10 +96,13 @@
 .bg-pagetheme {
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 1200px 177px; // 2400 354
-    height: 177px;
+    background-size: 1200px 150px;
+    height: 150px;
     .contact-page & {
         background-image: url(../img/bg-pagetheme-contact.jpg);
+        .ie8 & {
+            background-image: url(../img/bg-pagetheme-contact-ie8.jpg);
+        }
     }
 }
 
@@ -110,8 +111,10 @@
  */
 .main {
     @include clearfix();
+    position: relative;
     margin: -30px auto 0;
     width: $width-container;
+    z-index: 10;
 }
 .main-header {
     background-color: $gray-darker;
@@ -128,7 +131,11 @@
     }
 }
 .main-contents {
+    background-color: #fff;
     padding: 25px;
+    min-height: 400px;
+    height: auto !important;
+    height: 400px;
     border-right: 1px $gray-lightest solid;
     border-left: 1px $gray-lightest solid;
 }
@@ -136,8 +143,12 @@
 /* 
  * 	  .footer
  */
+/* Social Media スプライト画像読み込み */
+@import "sprite-sns-img";
 .footer {
     background-color: $gray-darkest;
+    margin: -30px 0 0 0;
+    padding: 68px 0 40px 0;
     color: $gray-lighter;
     border-top: 7px $brand-primary solid;
 }
@@ -176,6 +187,77 @@
         }
         li {
             float: left;
+            width: 30px;
+            height: 30px;
+            margin: 0 7px 7px 0;
+            &:nth-child(8n) {
+                margin-right: 0;
+            }
+            &.social-rss a {
+                @include sprite($item-sns01-rss);
+            }
+            &.social-facebook a {
+                @include sprite($item-sns02-facebook);
+            }
+            &.social-twitter a {
+                @include sprite($item-sns03-twitter);
+            }
+            &.social-email a {
+                @include sprite($item-sns04-email);
+            }
+            &.social-tumblr a {
+                @include sprite($item-sns05-tumblr);
+            }
+            &.social-path a {
+                @include sprite($item-sns06-path);
+            }
+            &.social-vimeo a {
+                @include sprite($item-sns07-vimeo);
+            }
+            &.social-zerply a {
+                @include sprite($item-sns08-zerply);
+            }
+            &.social-picasa a {
+                @include sprite($item-sns09-picasa);
+            }
+            &.social-stumble a {
+                @include sprite($item-sns10-stumble);
+            }
+            &.social-skype a {
+                @include sprite($item-sns11-skype);
+            }
+            &.social-reddit a {
+                @include sprite($item-sns12-reddit);
+            }
+            &.social-evernote a {
+                @include sprite($item-sns13-evernote);
+            }
+            &.social-behance a {
+                @include sprite($item-sns14-behance);
+            }
+            &.social-dribbble a {
+                @include sprite($item-sns15-dribbble);
+            }
+            &.social-digg a {
+                @include sprite($item-sns16-digg);
+            }
+            &.social-blogger a {
+                @include sprite($item-sns17-blogger);
+            }
+            &.social-flickr a {
+                @include sprite($item-sns18-flickr);
+            }
+            &.social-linkedin a {
+                @include sprite($item-sns19-linkedin);
+            }
+            &.social-google a {
+                @include sprite($item-sns20-google);
+            }
+        }
+        a {
+            display: block;
+            background-repeat: no-repeat;
+            @include text-hide();
         }
     }
 }

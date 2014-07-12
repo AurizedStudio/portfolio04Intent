@@ -1,0 +1,247 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+$item-sns01-rss-x: 30px;
+$item-sns01-rss-y: 0px;
+$item-sns01-rss-offset-x: -30px;
+$item-sns01-rss-offset-y: 0px;
+$item-sns01-rss-width: 30px;
+$item-sns01-rss-height: 30px;
+$item-sns01-rss-total-width: 150px;
+$item-sns01-rss-total-height: 120px;
+$item-sns01-rss-image: '../img/bg-sns.png';
+$item-sns01-rss: 30px 0px -30px 0px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns02-facebook-x: 90px;
+$item-sns02-facebook-y: 30px;
+$item-sns02-facebook-offset-x: -90px;
+$item-sns02-facebook-offset-y: -30px;
+$item-sns02-facebook-width: 30px;
+$item-sns02-facebook-height: 30px;
+$item-sns02-facebook-total-width: 150px;
+$item-sns02-facebook-total-height: 120px;
+$item-sns02-facebook-image: '../img/bg-sns.png';
+$item-sns02-facebook: 90px 30px -90px -30px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns03-twitter-x: 0px;
+$item-sns03-twitter-y: 30px;
+$item-sns03-twitter-offset-x: 0px;
+$item-sns03-twitter-offset-y: -30px;
+$item-sns03-twitter-width: 30px;
+$item-sns03-twitter-height: 30px;
+$item-sns03-twitter-total-width: 150px;
+$item-sns03-twitter-total-height: 120px;
+$item-sns03-twitter-image: '../img/bg-sns.png';
+$item-sns03-twitter: 0px 30px 0px -30px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns04-email-x: 30px;
+$item-sns04-email-y: 30px;
+$item-sns04-email-offset-x: -30px;
+$item-sns04-email-offset-y: -30px;
+$item-sns04-email-width: 30px;
+$item-sns04-email-height: 30px;
+$item-sns04-email-total-width: 150px;
+$item-sns04-email-total-height: 120px;
+$item-sns04-email-image: '../img/bg-sns.png';
+$item-sns04-email: 30px 30px -30px -30px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns05-tumblr-x: 60px;
+$item-sns05-tumblr-y: 0px;
+$item-sns05-tumblr-offset-x: -60px;
+$item-sns05-tumblr-offset-y: 0px;
+$item-sns05-tumblr-width: 30px;
+$item-sns05-tumblr-height: 30px;
+$item-sns05-tumblr-total-width: 150px;
+$item-sns05-tumblr-total-height: 120px;
+$item-sns05-tumblr-image: '../img/bg-sns.png';
+$item-sns05-tumblr: 60px 0px -60px 0px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns06-path-x: 60px;
+$item-sns06-path-y: 30px;
+$item-sns06-path-offset-x: -60px;
+$item-sns06-path-offset-y: -30px;
+$item-sns06-path-width: 30px;
+$item-sns06-path-height: 30px;
+$item-sns06-path-total-width: 150px;
+$item-sns06-path-total-height: 120px;
+$item-sns06-path-image: '../img/bg-sns.png';
+$item-sns06-path: 60px 30px -60px -30px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns07-vimeo-x: 0px;
+$item-sns07-vimeo-y: 60px;
+$item-sns07-vimeo-offset-x: 0px;
+$item-sns07-vimeo-offset-y: -60px;
+$item-sns07-vimeo-width: 30px;
+$item-sns07-vimeo-height: 30px;
+$item-sns07-vimeo-total-width: 150px;
+$item-sns07-vimeo-total-height: 120px;
+$item-sns07-vimeo-image: '../img/bg-sns.png';
+$item-sns07-vimeo: 0px 60px 0px -60px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns08-zerply-x: 30px;
+$item-sns08-zerply-y: 60px;
+$item-sns08-zerply-offset-x: -30px;
+$item-sns08-zerply-offset-y: -60px;
+$item-sns08-zerply-width: 30px;
+$item-sns08-zerply-height: 30px;
+$item-sns08-zerply-total-width: 150px;
+$item-sns08-zerply-total-height: 120px;
+$item-sns08-zerply-image: '../img/bg-sns.png';
+$item-sns08-zerply: 30px 60px -30px -60px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns09-picasa-x: 60px;
+$item-sns09-picasa-y: 60px;
+$item-sns09-picasa-offset-x: -60px;
+$item-sns09-picasa-offset-y: -60px;
+$item-sns09-picasa-width: 30px;
+$item-sns09-picasa-height: 30px;
+$item-sns09-picasa-total-width: 150px;
+$item-sns09-picasa-total-height: 120px;
+$item-sns09-picasa-image: '../img/bg-sns.png';
+$item-sns09-picasa: 60px 60px -60px -60px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns10-stumble-x: 90px;
+$item-sns10-stumble-y: 0px;
+$item-sns10-stumble-offset-x: -90px;
+$item-sns10-stumble-offset-y: 0px;
+$item-sns10-stumble-width: 30px;
+$item-sns10-stumble-height: 30px;
+$item-sns10-stumble-total-width: 150px;
+$item-sns10-stumble-total-height: 120px;
+$item-sns10-stumble-image: '../img/bg-sns.png';
+$item-sns10-stumble: 90px 0px -90px 0px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns11-skype-x: 0px;
+$item-sns11-skype-y: 0px;
+$item-sns11-skype-offset-x: 0px;
+$item-sns11-skype-offset-y: 0px;
+$item-sns11-skype-width: 30px;
+$item-sns11-skype-height: 30px;
+$item-sns11-skype-total-width: 150px;
+$item-sns11-skype-total-height: 120px;
+$item-sns11-skype-image: '../img/bg-sns.png';
+$item-sns11-skype: 0px 0px 0px 0px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns12-reddit-x: 90px;
+$item-sns12-reddit-y: 60px;
+$item-sns12-reddit-offset-x: -90px;
+$item-sns12-reddit-offset-y: -60px;
+$item-sns12-reddit-width: 30px;
+$item-sns12-reddit-height: 30px;
+$item-sns12-reddit-total-width: 150px;
+$item-sns12-reddit-total-height: 120px;
+$item-sns12-reddit-image: '../img/bg-sns.png';
+$item-sns12-reddit: 90px 60px -90px -60px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns13-evernote-x: 0px;
+$item-sns13-evernote-y: 90px;
+$item-sns13-evernote-offset-x: 0px;
+$item-sns13-evernote-offset-y: -90px;
+$item-sns13-evernote-width: 30px;
+$item-sns13-evernote-height: 30px;
+$item-sns13-evernote-total-width: 150px;
+$item-sns13-evernote-total-height: 120px;
+$item-sns13-evernote-image: '../img/bg-sns.png';
+$item-sns13-evernote: 0px 90px 0px -90px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns14-behance-x: 30px;
+$item-sns14-behance-y: 90px;
+$item-sns14-behance-offset-x: -30px;
+$item-sns14-behance-offset-y: -90px;
+$item-sns14-behance-width: 30px;
+$item-sns14-behance-height: 30px;
+$item-sns14-behance-total-width: 150px;
+$item-sns14-behance-total-height: 120px;
+$item-sns14-behance-image: '../img/bg-sns.png';
+$item-sns14-behance: 30px 90px -30px -90px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns15-dribbble-x: 60px;
+$item-sns15-dribbble-y: 90px;
+$item-sns15-dribbble-offset-x: -60px;
+$item-sns15-dribbble-offset-y: -90px;
+$item-sns15-dribbble-width: 30px;
+$item-sns15-dribbble-height: 30px;
+$item-sns15-dribbble-total-width: 150px;
+$item-sns15-dribbble-total-height: 120px;
+$item-sns15-dribbble-image: '../img/bg-sns.png';
+$item-sns15-dribbble: 60px 90px -60px -90px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns16-digg-x: 90px;
+$item-sns16-digg-y: 90px;
+$item-sns16-digg-offset-x: -90px;
+$item-sns16-digg-offset-y: -90px;
+$item-sns16-digg-width: 30px;
+$item-sns16-digg-height: 30px;
+$item-sns16-digg-total-width: 150px;
+$item-sns16-digg-total-height: 120px;
+$item-sns16-digg-image: '../img/bg-sns.png';
+$item-sns16-digg: 90px 90px -90px -90px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns17-blogger-x: 120px;
+$item-sns17-blogger-y: 0px;
+$item-sns17-blogger-offset-x: -120px;
+$item-sns17-blogger-offset-y: 0px;
+$item-sns17-blogger-width: 30px;
+$item-sns17-blogger-height: 30px;
+$item-sns17-blogger-total-width: 150px;
+$item-sns17-blogger-total-height: 120px;
+$item-sns17-blogger-image: '../img/bg-sns.png';
+$item-sns17-blogger: 120px 0px -120px 0px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns18-flickr-x: 120px;
+$item-sns18-flickr-y: 30px;
+$item-sns18-flickr-offset-x: -120px;
+$item-sns18-flickr-offset-y: -30px;
+$item-sns18-flickr-width: 30px;
+$item-sns18-flickr-height: 30px;
+$item-sns18-flickr-total-width: 150px;
+$item-sns18-flickr-total-height: 120px;
+$item-sns18-flickr-image: '../img/bg-sns.png';
+$item-sns18-flickr: 120px 30px -120px -30px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns19-linkedin-x: 120px;
+$item-sns19-linkedin-y: 60px;
+$item-sns19-linkedin-offset-x: -120px;
+$item-sns19-linkedin-offset-y: -60px;
+$item-sns19-linkedin-width: 30px;
+$item-sns19-linkedin-height: 30px;
+$item-sns19-linkedin-total-width: 150px;
+$item-sns19-linkedin-total-height: 120px;
+$item-sns19-linkedin-image: '../img/bg-sns.png';
+$item-sns19-linkedin: 120px 60px -120px -60px 30px 30px 150px 120px '../img/bg-sns.png';
+$item-sns20-google-x: 120px;
+$item-sns20-google-y: 90px;
+$item-sns20-google-offset-x: -120px;
+$item-sns20-google-offset-y: -90px;
+$item-sns20-google-width: 30px;
+$item-sns20-google-height: 30px;
+$item-sns20-google-total-width: 150px;
+$item-sns20-google-total-height: 120px;
+$item-sns20-google-image: '../img/bg-sns.png';
+$item-sns20-google: 120px 90px -120px -90px 30px 30px 150px 120px '../img/bg-sns.png';
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}

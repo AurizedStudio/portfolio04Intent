@@ -3846,10 +3846,6 @@ input[type="button"].btn-block {
   }
 }
 /* 
- * 	  font追加
- */
-/* ciロゴ、gnav */
-/* 
  * 	  .header
  */
 .sns {
@@ -3975,19 +3971,24 @@ input[type="button"].btn-block {
 .bg-pagetheme {
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 1200px 177px;
-  height: 177px;
+  background-size: 1200px 150px;
+  height: 150px;
 }
 .contact-page .bg-pagetheme {
   background-image: url(../img/bg-pagetheme-contact.jpg);
+}
+.ie8 .contact-page .bg-pagetheme {
+  background-image: url(../img/bg-pagetheme-contact-ie8.jpg);
 }
 
 /* 
  * 	  .main
  */
 .main {
+  position: relative;
   margin: -30px auto 0;
   width: 940px;
+  z-index: 10;
 }
 .main:before, .main:after {
   content: " ";
@@ -4014,7 +4015,11 @@ input[type="button"].btn-block {
 }
 
 .main-contents {
+  background-color: #fff;
   padding: 25px;
+  min-height: 400px;
+  height: auto !important;
+  height: 400px;
   border-right: 1px #dfdfdf solid;
   border-left: 1px #dfdfdf solid;
 }
@@ -4022,8 +4027,32 @@ input[type="button"].btn-block {
 /* 
  * 	  .footer
  */
+/* Social Media スプライト画像読み込み */
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
 .footer {
   background-color: #24272a;
+  margin: -30px 0 0 0;
+  padding: 68px 0 40px 0;
   color: #adadad;
   border-top: 7px #ea5a4b solid;
 }
@@ -4070,6 +4099,141 @@ input[type="button"].btn-block {
 }
 .foote-item.social li {
   float: left;
+  width: 30px;
+  height: 30px;
+  margin: 0 7px 7px 0;
+}
+.foote-item.social li:nth-child(8n) {
+  margin-right: 0;
+}
+.foote-item.social li.social-rss a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -30px 0px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-facebook a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -90px -30px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-twitter a {
+  background-image: url(../img/bg-sns.png);
+  background-position: 0px -30px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-email a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -30px -30px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-tumblr a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -60px 0px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-path a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -60px -30px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-vimeo a {
+  background-image: url(../img/bg-sns.png);
+  background-position: 0px -60px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-zerply a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -30px -60px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-picasa a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -60px -60px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-stumble a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -90px 0px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-skype a {
+  background-image: url(../img/bg-sns.png);
+  background-position: 0px 0px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-reddit a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -90px -60px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-evernote a {
+  background-image: url(../img/bg-sns.png);
+  background-position: 0px -90px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-behance a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -30px -90px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-dribbble a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -60px -90px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-digg a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -90px -90px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-blogger a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -120px 0px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-flickr a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -120px -30px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-linkedin a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -120px -60px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social li.social-google a {
+  background-image: url(../img/bg-sns.png);
+  background-position: -120px -90px;
+  width: 30px;
+  height: 30px;
+}
+.foote-item.social a {
+  display: block;
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
 }
 
 .foote-item-title {
