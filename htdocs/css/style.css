@@ -4020,6 +4020,66 @@ input[type="button"].btn-block {
 }
 
 /* 
+ * 	  .footer
+ */
+.footer {
+  background-color: #24272a;
+  color: #adadad;
+  border-top: 7px #ea5a4b solid;
+}
+
+.footer-inner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
+}
+.footer-inner:before, .footer-inner:after {
+  content: " ";
+  display: table;
+}
+.footer-inner:after {
+  clear: both;
+}
+
+.foote-item {
+  float: left;
+  padding: 0 0 0 20px;
+  width: 313.33333px;
+}
+.foote-item:first-child {
+  padding-left: 0;
+}
+.foote-item.posts ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bitter', serif;
+  list-style: none;
+}
+.foote-item.posts li {
+  padding: 16px 0;
+  border-bottom: 1px #464646 solid;
+}
+.foote-item.posts li:first-child {
+  padding-top: 0;
+}
+.foote-item.social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.foote-item.social li {
+  float: left;
+}
+
+.foote-item-title {
+  margin: 0 0 24px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* 
  *  Core Owl Carousel CSS File
  */
 .owl-carousel {
