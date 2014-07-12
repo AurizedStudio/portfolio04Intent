@@ -70,7 +70,16 @@ grunt.initConfig({
 	},
 	stylestats: {
 		src: ['<%= paths.dist %>/css/style.css']
-	}
+	},
+    sprite: {
+        all:{
+            src: 'sprite-sns-img/*.png',
+            destCSS: 'scss/_sprite-sns-img.scss',
+            destImg: '<%= paths.dist %>/img/bg-sns.png',
+            'algorithm': 'binary-tree',
+            'imgPath': '../img/bg-sns.png'
+        }
+    }
 });
 
 grunt.registerTask('default', ['connect', 'browserSync', 'watch']);
