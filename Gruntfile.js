@@ -56,6 +56,7 @@ grunt.initConfig({
 				src: [
 					'<%= paths.dist %>/*.html',
 					'<%= paths.dist %>/css/*.css',
+					'<%= paths.dist %>/js/*.js'
 				]
 			},
 			options: {

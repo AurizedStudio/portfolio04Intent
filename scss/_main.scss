@@ -4,7 +4,7 @@
 @import url(http://fonts.googleapis.com/css?family=Bitter);
 
 /* 
- * 	  .header
+ * 	.header
  */
 .sns {
     background-color: $gray-darkest;
@@ -46,6 +46,12 @@
 .navbar-ci {
     float: left;
     font-family: 'Bitter', serif;
+    .home-page & {
+        margin: 0;
+        line-height: $line-height-base;
+        font-size: $font-size-base;
+        font-weight: normal;
+    }
 }
 .navbar-ci-logo {
     display: table-cell;
@@ -75,6 +81,11 @@
     li {
         float: left;
         margin: 0 0 0 20px;
+        &.navbar-gnav-home a {
+            .home-page & {
+                color: $brand-primary;
+            }
+        }
         &.navbar-gnav-contact a {
             .contact-page & {
                 color: $brand-primary;
@@ -91,7 +102,90 @@
 }
 
 /* 
- * 	  .bg-pagetheme（テーマ背景画像）
+ * 	.slider（ホーム スライダー）
+ */
+.slider-main {
+    @include center-block();
+    width: 1020px;
+}
+.slider-thumb-outer { // スライダーサムネイル表示調整用
+    @include center-block();
+    background-color: $gray-darker;
+    width: $width-container;
+}
+.slider-thumb { // スライダーサムネイル動作用
+    @include center-block();
+    width: $width-container - 40px;
+}
+.slider-main-item,
+.slider-thumb-item {
+    img {
+        @include img-responsive();
+    }
+}
+.slider-main-item {
+    position: relative;
+    .slider-main-item-copy {
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        font-family: 'Bitter', serif;
+        font-size: ($font-size-xlarge * 1.2);
+        color: #fff;
+        span {
+            display: inline-block;
+            background-color: rgba(0,0,0,.75);
+            margin: 0 0 4px 0;
+            padding: .3em;
+        }
+    }
+}
+.slider-thumb {
+    background-color: $gray-darker;
+    padding: 24px 0;
+    .slider-thumb-item {
+        margin: 0 6px;
+    }
+    .owl-item {
+        img {
+            border: 2px $gray-darker solid;
+        }
+    }
+    .synced {
+        img {
+            border: 2px $brand-primary solid;
+        }
+    }
+}
+.slider-thumb-item {
+    cursor: pointer;
+}
+.owl-theme {
+    position: relative;
+}
+.owl-controls {
+    position: relative;
+}
+.owl-buttons {
+    position: absolute;
+    top: 210px;
+    color: #fff;
+    z-index: 100;
+    left: 40px;
+}
+.owl-prev,
+.owl-next {
+    background-color: $brand-primary;
+    padding: .4em .5em;
+}
+.owl-next {
+    position: absolute;
+    top: 0;
+    left: 36px;
+}
+
+/* 
+ * 	.bg-pagetheme（テーマ背景画像）
  */
 .bg-pagetheme {
     background-repeat: no-repeat;
@@ -107,7 +201,7 @@
 }
 
 /* 
- * 	  .main
+ * 	.main
  */
 .main {
     @include clearfix();
@@ -115,6 +209,9 @@
     margin: -30px auto 0;
     width: $width-container;
     z-index: 10;
+    .home-page & {
+        margin: 0 auto;
+    }
 }
 .main-header {
     background-color: $gray-darker;
@@ -141,7 +238,7 @@
 }
 
 /* 
- * 	  .footer
+ * 	.footer
  */
 /* Social Media スプライト画像読み込み */
 @import "sprite-sns-img";
@@ -267,4 +364,3 @@
     font-weight: bold;
     color: #fff;
 }
-
