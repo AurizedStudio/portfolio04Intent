@@ -12,7 +12,7 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //## Gray and brand colors for use across Bootstrap.
 
 $gray-darkest:    #24272a; // header,footer bg
-$gray-darker:     #282b2e; // h1 bg
+$gray-darker:     #282b2e; // h1 bg, slider thumb
 $gray-dark:        #252525; // normal text, gnav
 $gray:                 #464646; // footer recent post border
 $gray-light:        #5c5c5c;
@@ -84,7 +84,7 @@ $headings-color:          inherit !default;
 //## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
 // ** Load fonts from this directory.
-$icon-font-path: "htdocs/fonts/" !default;
+$icon-font-path: "../fonts/";
 // ** File name for all font files.
 $icon-font-name:          "glyphicons-halflings-regular" !default;
 // ** Element ID within SVG icon file.
