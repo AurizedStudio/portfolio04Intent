@@ -4061,11 +4061,11 @@ input[type="button"].btn-block {
 }
 
 .slider-thumb-outer {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  margin: -30px auto 0;
   background-color: #282b2e;
   width: 940px;
+  z-index: 10;
 }
 
 .slider-thumb {

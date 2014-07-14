@@ -109,9 +109,11 @@
     width: 1020px;
 }
 .slider-thumb-outer { // スライダーサムネイル表示調整用
-    @include center-block();
+    position: relative;
+    margin: -30px auto 0;
     background-color: $gray-darker;
     width: $width-container;
+    z-index: 10;
 }
 .slider-thumb { // スライダーサムネイル動作用
     @include center-block();
