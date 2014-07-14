@@ -4106,7 +4106,13 @@ input[type="button"].btn-block {
   padding: 24px 0;
 }
 .slider-thumb .slider-thumb-item {
-  margin: 0 8px;
+  margin: 0 6px;
+}
+.slider-thumb .owl-item img {
+  border: 2px #282b2e solid;
+}
+.slider-thumb .synced img {
+  border: 2px #ea5a4b solid;
 }
 
 .slider-thumb-item {
