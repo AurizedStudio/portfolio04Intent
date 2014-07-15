@@ -12,12 +12,13 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //## Gray and brand colors for use across Bootstrap.
 
 $gray-darkest:    #24272a; // header,footer bg
-$gray-darker:     #282b2e; // h1 bg, slider thumb
-$gray-dark:        #252525; // normal text, gnav
+$gray-darker:     #282b2e; // h1 bg, slider thumb, icons bg
+$gray-dark:        #252525; // normal text, gnav, work navi
 $gray:                 #464646; // footer recent post border
 $gray-light:        #5c5c5c;
 $gray-lighter:     #adadad; // footer text, h1 sub text
 $gray-lightest: #dfdfdf; // main border
+$gray-alpha: rgba(0,0,0,.75); // slider copy, work title
 
 $brand-primary: #ea5a4b; // Intent Red
 $brand-success:         #5cb85c !default;
