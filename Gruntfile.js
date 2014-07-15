@@ -35,8 +35,10 @@ grunt.initConfig({
 		}
 	},
     watch: {
-        files: ['scss/*.scss', 'scss/mixins/*.scss', 'scss/owl/*.scss'],
-        tasks: ['sass']
+        css: {
+            files: ['scss/*.scss', 'scss/mixins/*.scss', 'scss/owl/*.scss'],
+            tasks: ['sass', 'autoprefixer']
+        }
     },
 	esteWatch: {
 		options: {
@@ -54,9 +56,9 @@ grunt.initConfig({
 		default_options: {
 			files: {
 				src: [
-					'<%= paths.dist %>/*.html',
-					'<%= paths.dist %>/css/*.css',
-					'<%= paths.dist %>/js/*.js'
+                    '<%= paths.dist %>/js/*.js',
+    				'<%= paths.dist %>/*.html',
+					'<%= paths.dist %>/css/*.css'
 				]
 			},
 			options: {
@@ -79,6 +81,18 @@ grunt.initConfig({
             destImg: '<%= paths.dist %>/img/bg-sns.png',
             'algorithm': 'binary-tree',
             'imgPath': '../img/bg-sns.png'
+        }
+    },
+    webfont: {
+        icons: {
+            src: 'svg/*.svg',
+            dest: '<%= paths.dist %>/fonts',
+            destCss: 'scss',
+            options: {
+                engine: 'node',
+                stylesheet: 'scss',
+                relativeFontPath: '../fonts'
+            }
         }
     }
 });

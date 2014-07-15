@@ -82,3 +82,19 @@ $(document).ready(function() {
   }
 
 });
+
+/*
+ * Homeページ portfolio
+ */
+$(function(){
+   var $portfolioItem = $('.portfolio-item');
+   $portfolioItem.on({
+       'mouseenter': function(){
+           $(this).find('.portfolio-item-title').addClass('is-portfolio-item-title');
+       },
+       'mouseleave': function(){
+           $(this).find('.portfolio-item-title').removeClass('is-portfolio-item-title');
+       }
+   })
+   $('.portfolio-item:nth-child(4n)').addClass('is-portfolio-item');
+});
