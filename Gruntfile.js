@@ -55,11 +55,7 @@ grunt.initConfig({
 	browserSync: {
 		default_options: {
 			files: {
-				src: [
-                    '<%= paths.dist %>/js/*.js',
-    				'<%= paths.dist %>/*.html',
-					'<%= paths.dist %>/css/*.css'
-				]
+				src: ['<%= paths.dist %>/js/*.js','<%= paths.dist %>/css/*.css','<%= paths.dist %>/*.html']
 			},
 			options: {
 				watchTask: true,
