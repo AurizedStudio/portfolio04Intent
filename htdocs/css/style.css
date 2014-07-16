@@ -3570,6 +3570,32 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+.embed-responsive.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+.embed-responsive.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
@@ -4252,6 +4278,81 @@ input[type="button"].btn-block {
   padding: 0 0 0 20px;
 }
 
+/* blogページ 記事 */
+.blog-article {
+  padding: 20px 0 20px 0;
+  border-top: 5px #ea5a4b solid;
+}
+.blog-article:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.blog-article-title {
+  margin: 0 0 20px 0;
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+  color: #5c5c5c;
+}
+
+.blog-artice-media {
+  margin: 0 0 20px 0;
+}
+.blog-artice-media img {
+  display: block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-artice-media-audio {
+  width: 100%;
+}
+
+.blog-article-txt:before, .blog-article-txt:after {
+  content: " ";
+  display: table;
+}
+.blog-article-txt:after {
+  clear: both;
+}
+
+.blog-article-txt-info {
+  float: left;
+  width: 25%;
+}
+.blog-article-txt-info dl {
+  margin: 0 0 10px 0;
+}
+.blog-article-txt-info dl.blog-article-txt-info-tags span {
+  margin: 0 0 0 5px;
+}
+.blog-article-txt-info dl.blog-article-txt-info-tags span:first-child {
+  margin-left: 0;
+}
+.blog-article-txt-info dl.blog-article-txt-info-tags span:first-child:before {
+  content: '';
+  margin: 0;
+}
+.blog-article-txt-info dl.blog-article-txt-info-tags span:before {
+  content: '|';
+  margin: 0 5px 0 0;
+}
+.blog-article-txt-info dt {
+  font-family: 'Bitter', serif;
+  font-weight: normal;
+}
+.blog-article-txt-info dd {
+  font-size: 12px;
+  color: #ea5a4b;
+}
+
+.blog-article-txt-txt {
+  float: left;
+  width: 75%;
+}
+
+/* blogページ サイド */
 /* homeページ feature */
 .features-all {
   display: table;
