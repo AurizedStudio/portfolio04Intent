@@ -86,6 +86,11 @@
                 color: $brand-primary;
             }
         }
+        &.navbar-gnav-blog a {
+            .blog-page & {
+                color: $brand-primary;
+            }
+        }
         &.navbar-gnav-contact a {
             .contact-page & {
                 color: $brand-primary;
@@ -194,6 +199,12 @@
     background-position: center top;
     background-size: 1200px 150px;
     height: 150px;
+    .blog-page & {
+        background-image: url(../img/bg-pagetheme-contact.jpg);
+        .ie8 & {
+            background-image: url(../img/bg-pagetheme-contact-ie8.jpg);
+        }
+    }
     .contact-page & {
         background-image: url(../img/bg-pagetheme-contact.jpg);
         .ie8 & {
@@ -222,6 +233,7 @@
     margin: 0;
     padding: 39px 37px;
     line-height: $line-height-xsmall;
+    font-family: 'Bitter', serif;
     font-size: $font-size-h1;
     color: #fff;
     small {
@@ -237,7 +249,20 @@
     height: 400px;
     border-right: 1px $gray-lightest solid;
     border-left: 1px $gray-lightest solid;
+    .blog-page & {
+        @include clearfix();
+    }
 }
+.main-contents-main {
+    float: left;
+    width: 70%;
+}
+.main-contents-side {
+    float: right;
+    width: 30%;
+    padding: 0 0 0 20px;
+}
+/* homeページ feature */
 .features-all {
     display: table;
     margin: 0 0 30px 0;
@@ -271,6 +296,7 @@
         color: #fff;
     }
 }
+/* homeページ work */
 .work-filter {
     ul {
         @include clearfix();
