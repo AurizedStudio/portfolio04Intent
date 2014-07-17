@@ -290,7 +290,7 @@ $screen-tablet:              $screen-sm-min !default;
 
 // Medium screen / desktop
 // ** Deprecated `$screen-md` as of v3.0.1
-$screen-md:                  992px !default;
+$screen-md: 940px;
 $screen-md-min:              $screen-md !default;
 // ** Deprecated `$screen-desktop` as of v3.0.1
 $screen-desktop:             $screen-md-min !default;
@@ -307,6 +307,8 @@ $screen-xs-max:              ($screen-sm-min - 1) !default;
 $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
 
+// Special
+$screen-ms: 690px; // middle small
 
 //== Grid system
 //

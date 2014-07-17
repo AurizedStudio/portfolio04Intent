@@ -25,9 +25,10 @@ $(document).ready(function() {
 
   sync2.owlCarousel({
     items : 10,
-    itemsDesktop      : [999,9],
-    itemsTablet       : [768,8],
-    itemsMobile       : [479,4],
+    itemsDesktop      : [1018,10],
+    itemsDesktopSmall     : [939,8],
+    itemsTablet       : [768,6],
+    itemsMobile       : [479,5],
     pagination:false,
     responsiveRefreshRate : 100,
     afterInit : function(el){
@@ -96,5 +97,12 @@ $(function(){
            $(this).find('.portfolio-item-title').removeClass('is-portfolio-item-title');
        }
    })
-   $('.portfolio-item:nth-child(4n)').addClass('is-portfolio-item');
 });
+
+$(window).on("resize.spFlag",function(){
+  if(window.matchMedia("(max-width: 939px)").matches){ // 930px以下の処理
+    $('.portfolio-item:nth-child(4n)').removeClass('is-portfolio-item');
+  }else{ // 940px以上の処理
+    $('.portfolio-item:nth-child(4n)').addClass('is-portfolio-item');
+  }
+}).trigger("resize.spFlag");﻿
