@@ -4367,6 +4367,11 @@ input[type="button"].btn-block {
     width: 100%;
   }
 }
+@media (max-width: 690px) {
+  .main {
+    margin: -100px auto 0;
+  }
+}
 .main-header {
   background-color: #282b2e;
 }
@@ -4384,6 +4389,11 @@ input[type="button"].btn-block {
   color: #adadad;
 }
 
+@media (max-width: 690px) {
+  .main-header-h1 {
+    padding: 20px 37px;
+  }
+}
 .main-contents {
   background-color: #fff;
   padding: 25px;
@@ -4412,6 +4422,18 @@ input[type="button"].btn-block {
   padding: 38px 0 0 20px;
 }
 
+@media (max-width: 690px) {
+  .main-contents-main {
+    float: none;
+    width: 100%;
+  }
+
+  .main-contents-side {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+}
 /* blogページ 記事 */
 .blog-article {
   padding: 20px 0 20px 0;
@@ -4486,6 +4508,36 @@ input[type="button"].btn-block {
   width: 75%;
 }
 
+@media (max-width: 479px) {
+  .blog-article-txt-info {
+    float: none;
+    width: 100%;
+  }
+  .blog-article-txt-info:before, .blog-article-txt-info:after {
+    content: " ";
+    display: table;
+  }
+  .blog-article-txt-info:after {
+    clear: both;
+  }
+  .blog-article-txt-info dl {
+    float: left;
+    width: 33.33333%;
+  }
+  .blog-article-txt-info dl.blog-article-txt-info-tags span {
+    display: block;
+    margin: 0;
+  }
+  .blog-article-txt-info dl.blog-article-txt-info-tags span:before {
+    content: '';
+    margin: 0;
+  }
+
+  .blog-article-txt-txt {
+    float: none;
+    width: 100%;
+  }
+}
 /* blogページ サイド */
 .side-item {
   margin: 0 0 26px 0;
@@ -4531,6 +4583,17 @@ input[type="button"].btn-block {
   border: 1px #dfdfdf solid;
 }
 
+@media (max-width: 690px) {
+  .side-item-adv li {
+    width: 25%;
+    padding: 0 3px 6px;
+  }
+}
+@media (max-width: 479px) {
+  .side-item-adv li {
+    width: 50%;
+  }
+}
 /* homeページ feature */
 .features-all {
   display: table;
