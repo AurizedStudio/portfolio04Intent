@@ -307,6 +307,8 @@ $screen-xs-max:              ($screen-sm-min - 1) !default;
 $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
 
+// Special
+$screen-ms: 690px; // middle small
 
 //== Grid system
 //

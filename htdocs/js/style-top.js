@@ -97,5 +97,12 @@ $(function(){
            $(this).find('.portfolio-item-title').removeClass('is-portfolio-item-title');
        }
    })
-   $('.portfolio-item:nth-child(4n)').addClass('is-portfolio-item');
 });
+
+$(window).on("resize.spFlag",function(){
+  if(window.matchMedia("(max-width: 939px)").matches){ // 930px以下の処理
+    $('.portfolio-item:nth-child(4n)').removeClass('is-portfolio-item');
+  }else{ // 940px以上の処理
+    $('.portfolio-item:nth-child(4n)').addClass('is-portfolio-item');
+  }
+}).trigger("resize.spFlag");﻿

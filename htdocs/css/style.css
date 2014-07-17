@@ -4022,7 +4022,7 @@ input[type="button"].btn-block {
   .sns li {
     display: inline-block;
     float: none;
-    margin: 0 10px;
+    margin: 0 14px;
   }
 }
 .navbar {
@@ -4119,6 +4119,10 @@ input[type="button"].btn-block {
 }
 
 @media (max-width: 939px) {
+  .navbar {
+    box-shadow: none;
+  }
+
   .navbar-inner {
     width: 100%;
   }
@@ -4135,13 +4139,18 @@ input[type="button"].btn-block {
   }
 }
 @media (max-width: 479px) {
+  .navbar-inner {
+    text-align: center;
+  }
+
   .navbar-ci {
     float: none;
-    margin: 0;
+    display: inline-block;
+    margin: 10px 0;
     text-align: center;
   }
   .home-page .navbar-ci {
-    margin: 0;
+    margin: 10px 0;
   }
 
   .navbar-gnav {
@@ -4191,6 +4200,7 @@ input[type="button"].btn-block {
 @media (max-width: 939px) {
   .slider-thumb-outer {
     width: 100%;
+    margin: 0 auto;
   }
 
   .slider-thumb {
@@ -4231,7 +4241,7 @@ input[type="button"].btn-block {
 }
 @media (max-width: 479px) {
   .slider-main-item .slider-main-item-copy {
-    top: 34%;
+    top: 50%;
     left: 4px;
     font-size: 14px;
   }
@@ -4254,45 +4264,60 @@ input[type="button"].btn-block {
   cursor: pointer;
 }
 
-.owl-theme {
-  position: relative;
-}
-
-.owl-controls {
-  position: relative;
-}
-
 .owl-buttons {
-  position: absolute;
-  top: 210px;
+  position: relative;
   color: #fff;
   z-index: 100;
-  left: 40px;
 }
 
 .owl-prev,
 .owl-next {
+  position: absolute;
   background-color: #ea5a4b;
+  top: 210px;
   padding: .4em .5em;
 }
 
+.owl-prev {
+  left: 40px;
+}
+
 .owl-next {
-  position: absolute;
-  top: 0;
-  left: 36px;
+  left: 90px;
 }
 
 @media (max-width: 939px) {
-  .owl-buttons {
-    top: 10px;
+  .owl-prev {
+    top: 250px;
+    left: 10px;
+  }
+
+  .owl-next {
+    top: 250px;
+    left: 60px;
+  }
+}
+@media (max-width: 690px) {
+  .owl-prev {
+    top: 40px;
+    left: 10px;
+  }
+
+  .owl-next {
+    top: 40px;
     left: auto;
-    right: 50px;
+    right: 10px;
   }
 }
 @media (max-width: 479px) {
-  .owl-buttons {
-    top: 4px;
-    right: 40px;
+  .owl-prev {
+    top: 10px;
+    left: 0;
+  }
+
+  .owl-next {
+    top: 10px;
+    right: 0;
   }
 }
 /* 
@@ -4337,6 +4362,11 @@ input[type="button"].btn-block {
   margin: 0 auto;
 }
 
+@media (max-width: 939px) {
+  .main {
+    width: 100%;
+  }
+}
 .main-header {
   background-color: #282b2e;
 }
@@ -4516,6 +4546,18 @@ input[type="button"].btn-block {
   padding-left: 0;
 }
 
+@media (max-width: 690px) {
+  .features-all {
+    display: block;
+  }
+
+  .features-item {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+}
 .features-item-title {
   font-size: 18px;
   font-family: 'Bitter', serif;
@@ -4539,6 +4581,14 @@ input[type="button"].btn-block {
   color: #fff;
 }
 
+@media (max-width: 479px) {
+  .features-copy span {
+    display: block;
+  }
+  .features-copy b {
+    display: inline-block;
+  }
+}
 /* homeページ work */
 .work-filter ul {
   margin: 0 0 20px 0;
@@ -4570,6 +4620,18 @@ input[type="button"].btn-block {
   text-decoration: none;
 }
 
+@media (max-width: 479px) {
+  .work-filter ul {
+    text-align: center;
+  }
+  .work-filter li {
+    display: inline-block;
+    width: 33.33333%;
+  }
+  .work-filter a {
+    display: block;
+  }
+}
 .portfolio:before, .portfolio:after {
   content: " ";
   display: table;
@@ -4596,6 +4658,22 @@ input[type="button"].btn-block {
   margin-right: 0;
 }
 
+@media (max-width: 939px) {
+  .portfolio-item {
+    width: 23%;
+    margin: 0 1% 2%;
+  }
+}
+@media (max-width: 690px) {
+  .portfolio-item {
+    width: 31.33333%;
+  }
+}
+@media (max-width: 479px) {
+  .portfolio-item {
+    width: 48%;
+  }
+}
 .portfolio-item-title {
   display: inline-block;
   position: absolute;
@@ -4664,6 +4742,11 @@ The provided mixins are intended to be used with the array-like variables
   clear: both;
 }
 
+@media (max-width: 939px) {
+  .footer-inner {
+    width: 100%;
+  }
+}
 .foote-item {
   float: left;
   padding: 0 0 0 20px;
@@ -4829,6 +4912,27 @@ The provided mixins are intended to be used with the array-like variables
   border: 0;
 }
 
+@media (max-width: 939px) {
+  .foote-item {
+    width: 33.33333%;
+    padding: 0 20px;
+  }
+  .foote-item:first-child {
+    padding-left: 20px;
+  }
+  .foote-item.social li {
+    margin: 0 16px 18px 0;
+  }
+  .foote-item.social li:nth-child(8n) {
+    margin-right: 16px;
+  }
+}
+@media (max-width: 690px) {
+  .foote-item {
+    width: 100%;
+    margin: 0 0 40px 0;
+  }
+}
 .foote-item-title {
   margin: 0 0 24px 0;
   font-size: 16px;
