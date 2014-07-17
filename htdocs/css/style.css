@@ -4239,9 +4239,14 @@ input[type="button"].btn-block {
     left: 10px;
   }
 }
+@media (max-width: 690px) {
+  .slider-main-item .slider-main-item-copy {
+    top: 10px;
+  }
+}
 @media (max-width: 479px) {
   .slider-main-item .slider-main-item-copy {
-    top: 50%;
+    top: 6px;
     left: 4px;
     font-size: 14px;
   }
@@ -4299,24 +4304,24 @@ input[type="button"].btn-block {
 }
 @media (max-width: 690px) {
   .owl-prev {
-    top: 40px;
+    top: 120px;
     left: 10px;
   }
 
   .owl-next {
-    top: 40px;
+    top: 120px;
     left: auto;
     right: 10px;
   }
 }
 @media (max-width: 479px) {
   .owl-prev {
-    top: 10px;
+    top: 70px;
     left: 0;
   }
 
   .owl-next {
-    top: 10px;
+    top: 70px;
     right: 0;
   }
 }
