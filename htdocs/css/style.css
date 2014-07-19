@@ -4335,16 +4335,10 @@ input[type="button"].btn-block {
   height: 150px;
 }
 .blog-page .bg-pagetheme {
-  background-image: url(../img/bg-pagetheme-contact.jpg);
-}
-.ie8 .blog-page .bg-pagetheme {
-  background-image: url(../img/bg-pagetheme-contact-ie8.jpg);
+  background-image: url(../img/bg-pagetheme-blog.jpg);
 }
 .contact-page .bg-pagetheme {
   background-image: url(../img/bg-pagetheme-contact.jpg);
-}
-.ie8 .contact-page .bg-pagetheme {
-  background-image: url(../img/bg-pagetheme-contact-ie8.jpg);
 }
 
 /* 
@@ -4416,6 +4410,7 @@ input[type="button"].btn-block {
   clear: both;
 }
 
+/* blogページ レイアウト */
 .main-contents-main {
   float: left;
   width: 70%;
@@ -4439,6 +4434,22 @@ input[type="button"].btn-block {
     padding: 0;
   }
 }
+/* Contact ページ レイアウト */
+.contact-map {
+  margin: 0 0 20px 0;
+}
+
+.contact-info {
+  float: left;
+  width: 30%;
+  padding: 0 2% 0 0;
+}
+
+.contact-form {
+  float: right;
+  width: 70%;
+}
+
 /* blogページ 記事 */
 .blog-article {
   padding: 20px 0 20px 0;
