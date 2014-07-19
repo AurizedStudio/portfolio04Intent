@@ -1,7 +1,7 @@
 # CODING Portfolio04
 
 This is 4 pages portfolio site.  
-including [home](http://aurized-studio.jp/portfolio/Intent/) / [blog](http://aurized-studio.jp/portfolio/Intent/blog.html) / portfolio / contact.
+including [home](http://aurized-studio.jp/portfolio/Intent/) / [blog](http://aurized-studio.jp/portfolio/Intent/blog.html) / portfolio / [contact](http://aurized-studio.jp/portfolio/Intent/contact.html).
 
 ## Design
 
@@ -10,7 +10,8 @@ Source PSDs are from [INTENT PSD THEME](http://www.bestpsdfreebies.com/freebie/p
 
 ## Coding
 
-Then I did coding for practice. ( I'm doing right now...)
+Then I did coding for practice.  
+ ( I'm doing right now...)
 
 ## Licence
 
