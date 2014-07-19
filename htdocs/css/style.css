@@ -4258,15 +4258,14 @@ input[type="button"].btn-block {
 .slider-thumb .slider-thumb-item {
   margin: 0 6px;
 }
-.slider-thumb .owl-item img {
+.slider-thumb .owl-item a img {
   border: 2px #282b2e solid;
 }
-.slider-thumb .synced img {
+.slider-thumb .synced a img {
   border: 2px #ea5a4b solid;
 }
-
-.slider-thumb-item {
-  cursor: pointer;
+.slider-thumb .synced a:active, .slider-thumb .synced a:focus {
+  outline: 4px #ea5a4b solid;
 }
 
 .owl-buttons {
@@ -4492,7 +4491,7 @@ input[type="button"].btn-block {
   font-size: 18px;
   font-family: 'Bitter', serif;
 }
-.features-item-title i {
+.features-item-title span {
   background-color: #282b2e;
   margin: 0 8px 0 0;
   padding: 6px;
@@ -4505,10 +4504,11 @@ input[type="button"].btn-block {
   font-size: 18px;
   text-align: center;
 }
-.features-copy b {
+.features-copy em {
   background-color: #ea5a4b;
   padding: .5em;
   color: #fff;
+  font-style: normal;
 }
 
 @media (max-width: 479px) {
