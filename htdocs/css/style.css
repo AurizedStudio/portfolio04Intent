@@ -4450,6 +4450,17 @@ input[type="button"].btn-block {
   width: 70%;
 }
 
+@media (max-width: 690px) {
+  .contact-info {
+    float: none;
+    width: 100%;
+  }
+
+  .contact-form {
+    float: none;
+    width: 100%;
+  }
+}
 /* homeページ feature */
 .features-all {
   display: table;
@@ -4775,9 +4786,6 @@ input[type="button"].btn-block {
   }
 }
 /* Contactページ フォーム */
-.form-oneline {
-  margin: 0 0 15px 0;
-}
 .form-oneline:before, .form-oneline:after {
   content: " ";
   display: table;
@@ -4788,12 +4796,24 @@ input[type="button"].btn-block {
 .form-oneline .form-group {
   float: left;
   width: 49%;
-  margin: 0 0 0 2%;
+  margin: 0 0 15px 2%;
 }
 .form-oneline .form-group:first-child {
   margin-left: 0;
 }
 
+@media (max-width: 1024px) {
+  .contact-number {
+    line-height: 2;
+  }
+}
+@media (max-width: 479px) {
+  .form-oneline .form-group {
+    float: none;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+}
 /* 
  * 	.footer
  */
