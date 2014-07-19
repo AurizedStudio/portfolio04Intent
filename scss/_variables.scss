@@ -111,6 +111,7 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.33 !default;
 $line-height-small:         1.5 !default;
 $line-height-xsmall: .8;
+$line-height-double: 2;
 
 $border-radius-base:        4px !default;
 $border-radius-large:       6px !default;
@@ -308,6 +309,7 @@ $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
 
 // Special
+$screen-iPadh: 1024px; // iPod Horizon
 $screen-ms: 690px; // middle small
 
 //== Grid system

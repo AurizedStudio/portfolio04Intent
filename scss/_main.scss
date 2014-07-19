@@ -421,148 +421,14 @@
     float: right;
     width: 70%;
 }
-/* blogページ 記事 */
-.blog-article {
-    padding: 20px 0 20px 0;
-    border-top: 5px $brand-primary solid;
-    &:first-child {
-        padding-top: 0;
-        border-top: none;
-    }
-}
-.blog-article-title {
-    margin: 0 0 20px 0;
-    font-family: 'Bitter', serif;
-    font-size: $font-size-large;
-    color: $gray-light;
-}
-.blog-artice-media {
-    margin: 0 0 20px 0;
-    img {
-        @include img-responsive();
-    }
-}
-.blog-artice-media-audio {
-    width: 100%;
-}
-.blog-article-txt {
-    @include clearfix();
-}
-.blog-article-txt-info {
-    float: left;
-    width: 25%;
-    dl {
-        margin: 0 0 10px 0;
-        &.blog-article-txt-info-tags {
-            span {
-                margin: 0 0 0 5px;
-                &:first-child {
-                    margin-left: 0;
-                    &:before {
-                        content: '';
-                        margin: 0;
-                    }
-                }
-                &:before {
-                    content: '|';
-                    margin: 0 5px 0 0;
-                }
-            }
-        }
-    }
-    dt {
-        font-family: 'Bitter', serif;
-        font-weight: normal;
-    }
-    dd {
-        font-size: $font-size-small;
-        color: $brand-primary;
-    }
-}
-.blog-article-txt-txt {
-    float: left;
-    width: 75%;
-}
-@media ( max-width: ($screen-xs - 1) ) { // 479px
-.blog-article-txt-info {
-    @include clearfix();
-    float: none;
-    width: 100%;
-    dl {
-        float: left;
-        width: (100% / 3);
-        &.blog-article-txt-info-tags {
-            span {
-                display: block;
-                margin: 0;
-                &:before {
-                    content: '';
-                    margin: 0;
-                }
-            }
-        }
-    }
-}
-.blog-article-txt-txt {
-    float: none;
-    width: 100%;
-}
-}
-/* blogページ サイド */
-.side-item {
-    margin: 0 0 26px 0;
-}
-.side-item-title {
-    margin: 0 0 16px 0;
-    padding: 0 0 6px 0;
-    font-family: 'Bitter', serif;
-    font-size: $font-size-middle;
-    border-bottom: 5px $brand-primary solid;
-}
-.side-item-category {
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    li {
-        span {
-            margin: 0 0 0 4px;
-        }
-    }
-}
-.side-item-adv {
-    ul {
-        @include clearfix();
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    li {
-        float: left;
-        width: 50%;
-        padding: 0 6px 6px 0;
-        img {
-            width: 100%;
-            height: auto;
-//            @include img-responsive();
-            border: 1px $gray-lightest solid;
-        }
-    }
-}
 @media ( max-width: $screen-ms ) { // 690px
-.side-item-adv {
-    li {
-        width: 25%;
-        padding: 0 3px 6px;
-    }
+.contact-info {
+    float: none;
+    width: 100%;
 }
-}
-@media ( max-width: ($screen-xs - 1) ) { // 479px
-.side-item-adv {
-    li {
-        width: 50%;
-    }
+.contact-form {
+    float: none;
+    width: 100%;
 }
 }
 /* homeページ feature */
@@ -710,6 +576,177 @@
 }
 .portfolio-item-img {
     margin: 0;
+}
+/* blogページ 記事 */
+.blog-article {
+    padding: 20px 0 20px 0;
+    border-top: 5px $brand-primary solid;
+    &:first-child {
+        padding-top: 0;
+        border-top: none;
+    }
+}
+.blog-article-title {
+    margin: 0 0 20px 0;
+    font-family: 'Bitter', serif;
+    font-size: $font-size-large;
+    color: $gray-light;
+}
+.blog-artice-media {
+    margin: 0 0 20px 0;
+    img {
+        @include img-responsive();
+    }
+}
+.blog-artice-media-audio {
+    width: 100%;
+}
+.blog-article-txt {
+    @include clearfix();
+}
+.blog-article-txt-info {
+    float: left;
+    width: 25%;
+    dl {
+        margin: 0 0 10px 0;
+        &.blog-article-txt-info-tags {
+            span {
+                margin: 0 0 0 5px;
+                &:first-child {
+                    margin-left: 0;
+                    &:before {
+                        content: '';
+                        margin: 0;
+                    }
+                }
+                &:before {
+                    content: '|';
+                    margin: 0 5px 0 0;
+                }
+            }
+        }
+    }
+    dt {
+        font-family: 'Bitter', serif;
+        font-weight: normal;
+    }
+    dd {
+        font-size: $font-size-small;
+        color: $brand-primary;
+    }
+}
+.blog-article-txt-txt {
+    float: left;
+    width: 75%;
+}
+@media ( max-width: ($screen-xs - 1) ) { // 479px
+.blog-article-txt-info {
+    @include clearfix();
+    float: none;
+    width: 100%;
+    dl {
+        float: left;
+        width: (100% / 3);
+        &.blog-article-txt-info-tags {
+            span {
+                display: block;
+                margin: 0;
+                &:before {
+                    content: '';
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+.blog-article-txt-txt {
+    float: none;
+    width: 100%;
+}
+}
+/* blogページ サイド */
+.side-item {
+    margin: 0 0 26px 0;
+}
+.side-item-title {
+    margin: 0 0 16px 0;
+    padding: 0 0 6px 0;
+    font-family: 'Bitter', serif;
+    font-size: $font-size-middle;
+    border-bottom: 5px $brand-primary solid;
+}
+.side-item-category {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        span {
+            margin: 0 0 0 4px;
+        }
+    }
+}
+.side-item-adv {
+    ul {
+        @include clearfix();
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        float: left;
+        width: 50%;
+        padding: 0 6px 6px 0;
+        img {
+            width: 100%;
+            height: auto;
+//            @include img-responsive();
+            border: 1px $gray-lightest solid;
+        }
+    }
+}
+@media ( max-width: $screen-ms ) { // 690px
+.side-item-adv {
+    li {
+        width: 25%;
+        padding: 0 3px 6px;
+    }
+}
+}
+@media ( max-width: ($screen-xs - 1) ) { // 479px
+.side-item-adv {
+    li {
+        width: 50%;
+    }
+}
+}
+/* Contactページ フォーム */
+.form-oneline {
+    @include clearfix();
+    .form-group {
+//        display: inline-block;
+        float: left;
+        width: 49%;
+        margin: 0 0 15px 2%;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+@media ( max-width: ($screen-iPadh) ) { // 1024px
+.contact-number {
+    line-height: $line-height-double;
+}
+}
+@media ( max-width: ($screen-xs - 1) ) { // 479px
+.form-oneline {
+    .form-group {
+        float: none;
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+}
 }
 
 /* 
