@@ -10,7 +10,8 @@ Source PSDs are from [INTENT PSD THEME](http://www.bestpsdfreebies.com/freebie/p
 
 ## Coding
 
-Then I did coding for practice. ( I'm doing right now...)
+Then I did coding for practice.  
+ ( I'm doing right now...)
 
 ## Licence
 
