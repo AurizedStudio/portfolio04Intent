@@ -257,17 +257,21 @@
             border: 2px $gray-darker solid;
         }
     }
+    .synced a {
+        img {
+            border: 2px $brand-primary solid;
+        }
+    }
+}
+@media ( min-width: ($screen-iPadh + 1) ) { // 1025px
+.slider-thumb { // タッチ時にはフォーカスを効かせない
     .owl-item a {
         &:active img,
         &:focus img {
             border: 2px $brand-primary solid;
         }
     }
-    .synced a {
-        img {
-            border: 2px $brand-primary solid;
-        }
-    }
+}
 }
 .owl-buttons {
     position: relative;
@@ -485,7 +489,7 @@
     span {
         display: block;
     }
-    b {
+    em {
         display: inline-block;
     }
 }
