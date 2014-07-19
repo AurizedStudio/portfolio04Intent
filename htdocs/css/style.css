@@ -3135,13 +3135,15 @@ input[type="button"].btn-block {
 .slider-thumb .owl-item a img {
   border: 2px #282b2e solid;
 }
-.slider-thumb .owl-item a:active img, .slider-thumb .owl-item a:focus img {
-  border: 2px #ea5a4b solid;
-}
 .slider-thumb .synced a img {
   border: 2px #ea5a4b solid;
 }
 
+@media (min-width: 1025px) {
+  .slider-thumb .owl-item a:active img, .slider-thumb .owl-item a:focus img {
+    border: 2px #ea5a4b solid;
+  }
+}
 .owl-buttons {
   position: relative;
   color: #fff;
