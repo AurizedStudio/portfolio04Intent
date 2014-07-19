@@ -1,7 +1,7 @@
 # CODING Portfolio04
 
 This is 4 pages portfolio site.  
-including [home](http://aurized-studio.jp/portfolio/Intent/) / [blog](http://aurized-studio.jp/portfolio/Intent/blog.html) / portfolio / contact.
+including [home](http://aurized-studio.jp/portfolio/Intent/) / [blog](http://aurized-studio.jp/portfolio/Intent/blog.html) / portfolio / [contact](http://aurized-studio.jp/portfolio/Intent/contact.html).
 
 ## Design
 
