@@ -257,13 +257,15 @@
             border: 2px $gray-darker solid;
         }
     }
+    .owl-item a {
+        &:active img,
+        &:focus img {
+            border: 2px $brand-primary solid;
+        }
+    }
     .synced a {
         img {
             border: 2px $brand-primary solid;
-        }
-        &:active,
-        &:focus {
-            outline: 4px $brand-primary solid
         }
     }
 }
