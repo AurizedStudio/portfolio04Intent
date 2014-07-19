@@ -3391,7 +3391,7 @@ input[type="button"].btn-block {
   .features-copy span {
     display: block;
   }
-  .features-copy b {
+  .features-copy em {
     display: inline-block;
   }
 }
