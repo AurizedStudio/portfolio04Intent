@@ -3144,6 +3144,17 @@ input[type="button"].btn-block {
     border: 2px #ea5a4b solid;
   }
 }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .slider-thumb .owl-item a:active img, .slider-thumb .owl-item a:focus img {
+    border: none;
+  }
+  .home-page .slider-thumb .owl-item a img {
+    border: 2px #282b2e solid;
+  }
+  .home-page .slider-thumb .synced a img {
+    border: 2px #ea5a4b solid;
+  }
+}
 .owl-buttons {
   position: relative;
   color: #fff;

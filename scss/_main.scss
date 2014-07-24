@@ -264,11 +264,35 @@
     }
 }
 @media ( min-width: ($screen-iPadh + 1) ) { // 1025px
-.slider-thumb { // タッチ時にはフォーカスを効かせない
+.slider-thumb { // PC版でフォーカスを効かせる
     .owl-item a {
         &:active img,
         &:focus img {
             border: 2px $brand-primary solid;
+        }
+    }
+}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { // ハック for Chrome
+.slider-thumb { // chromeではfocusの挙動がおかしいので、focus時のボーダーは無効にする
+    .owl-item a {
+        &:active img,
+        &:focus img {
+            border: none;
+        }
+    }
+    .owl-item a {
+        img {
+            .home-page & {
+                border: 2px $gray-darker solid;
+            }
+        }
+    }
+    .synced a {
+        img {
+            .home-page & {
+                border: 2px $brand-primary solid;
+            }
         }
     }
 }
