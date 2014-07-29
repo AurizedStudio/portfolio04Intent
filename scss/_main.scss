@@ -784,7 +784,8 @@
 }
 }
 /* スクリプトページ */
-.btn-a {
+.btn-a,
+.btn-b {
     @include clearfix();
     list-style: none;
     padding: 0;
@@ -792,6 +793,9 @@
         float: left;
         margin: 0 1em 0 0;
     }
+}
+.is-btn-b-appear {
+    display: none;
 }
 
 
