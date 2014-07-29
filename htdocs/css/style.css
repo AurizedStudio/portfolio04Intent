@@ -3226,6 +3226,9 @@ input[type="button"].btn-block {
 .contact-page .bg-pagetheme {
   background-image: url(../img/bg-pagetheme-contact.jpg);
 }
+.script-page .bg-pagetheme {
+  background-image: url(../img/bg-pagetheme-script.jpg);
+}
 
 /* 
  * 	.main
@@ -3701,6 +3704,23 @@ input[type="button"].btn-block {
     margin: 0 0 15px 0;
   }
 }
+/* スクリプトページ */
+.btn-a {
+  list-style: none;
+  padding: 0;
+}
+.btn-a:before, .btn-a:after {
+  content: " ";
+  display: table;
+}
+.btn-a:after {
+  clear: both;
+}
+.btn-a li {
+  float: left;
+  margin: 0 1em 0 0;
+}
+
 /* 
  * 	.footer
  */
