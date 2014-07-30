@@ -35,3 +35,19 @@ $(function(){
 		}
 	});
 });
+
+// インプット/サブミットボタン
+$(function(){
+	var btnMail = $('#is-btn-d-mail');
+	var btnSubmit = $('#is-btn-d-submit');
+	if(btnMail.val().length == 0){ // inputに何も入力がなければSUBMITは押せない
+		btnSubmit.prop('disabled', true);
+	}
+	btnMail.on('keydown keyup keypress change', function(){
+		if($(this).val().length > 0){
+			btnSubmit.prop('disabled', false);
+		} else {
+			btnSubmit.prop('disabled', true);
+		}
+	});
+});
