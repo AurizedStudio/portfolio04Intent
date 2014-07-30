@@ -1,5 +1,12 @@
-// ボタンクリック
 $(function(){
+
+btnClick();
+bntVari();
+chkSub();
+inpSub();
+
+// ボタンクリック
+function btnClick() {
     var $btnClick = $(".is-btn-a-click");
     $btnClick.click(function(){
 //        e.stopPropagation();
@@ -12,18 +19,18 @@ $(function(){
         e.stopPropagation(); // イベント伝播をキャンセル
         alert('on click selector');
     });
-});
+};
 
 // ボタン 変数
-$(function(){
-    var btnB = $('.btn-b'); // $btnB としなくよい
+function bntVari(){
+    var btnB = $('.btn-b'); // $btnB としなくてよい
     btnB.find($('.is-btn-b-default')).on('click',  function(){
-            $(this).parent().next().children().toggleClass('is-btn-b-appear');
-        });
-});
+        $(this).parent().next().children().toggleClass('is-btn-b-appear');
+    });
+};
 
 // チェックボックス/サブミットボタン
-$(function(){
+function chkSub(){
 	var btnSubmit = $('#btn-c-submit');
 	var btnCheck = $('#btn-c-check-agree');
 	btnSubmit.prop('disabled', true); // 初期submitボタンをoffに
@@ -34,10 +41,10 @@ $(function(){
 			btnSubmit.prop('disabled', false);
 		}
 	});
-});
+};
 
 // インプット/サブミットボタン
-$(function(){
+function inpSub(){
 	var btnMail = $('#is-btn-d-mail');
 	var btnSubmit = $('#is-btn-d-submit');
 	if(btnMail.val().length == 0){ // inputに何も入力がなければSUBMITは押せない
@@ -50,4 +57,6 @@ $(function(){
 			btnSubmit.prop('disabled', true);
 		}
 	});
+};
+
 });
