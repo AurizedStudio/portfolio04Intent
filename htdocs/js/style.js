@@ -4,6 +4,7 @@ btnClick();
 bntVari();
 chkSub();
 inpSub();
+slideMenu();
 
 // ボタンクリック
 function btnClick() {
@@ -60,6 +61,23 @@ function inpSub(){
 			btnSubmit.prop('disabled', true);
 		}
 	});
+};
+
+// スライドメニュー
+function slideMenu(){
+    var menuBtn = $('.btn-e-menubtn');
+    var menu = $('.btn-e-menu');
+    menuBtn.on('click', function(){
+        menu.slideToggle();
+    });
+//    menu.find('.btn-e-menu-sub').each(function(){ // これでも動作するが下記で良い
+//        $(this).on('click', function(){
+//            $(this).find('ul').slideToggle();
+//        });
+//    });
+    menu.find('.btn-e-menu-sub').on('click', function(){
+        $(this).find('ul').slideToggle();
+    });
 };
 
 });

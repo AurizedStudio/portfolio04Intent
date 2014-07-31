@@ -797,6 +797,29 @@
 .is-btn-b-appear {
     display: none;
 }
+.btn-e {
+    font-size: $font-size-middle;
+}
+.btn-e-menubtn {
+    display: inline-block;
+    cursor: pointer;
+}
+.btn-e-menu { // 親ul
+    display: none;
+    padding: 0;
+    list-style: none;
+    a {
+    }
+    li {
+    }
+    .btn-e-menu-sub { // li
+        cursor: pointer;
+    }
+    ul { // 第２ul
+        display: none;
+        list-style: none;
+    }
+}
 
 
 /* 

@@ -7742,3 +7742,4 @@ node_modules/grunt-webfont/node_modules/svgicons2svgfont/tests/expected/original
 node_modules/grunt-webfont/node_modules/svgicons2svgfont/tests/expected/originalicons6.svg
 node_modules/grunt-webfont/node_modules/svgicons2svgfont/tests/expected/originalicons7.svg
 node_modules/grunt/node_modules/nopt/.gitignore
+_theme.scssc
