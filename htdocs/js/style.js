@@ -25,7 +25,10 @@ function btnClick() {
 function bntVari(){
     var btnB = $('.btn-b'); // $btnB としなくてよい
     btnB.find($('.is-btn-b-default')).on('click',  function(){
-        $(this).parent().next().children().toggleClass('is-btn-b-appear');
+        $(this).parent().next().fadeToggle().toggleClass();
+//        $(this).parent().next().fadeToggle(function(){ // funcitonをかます場合
+//            $(this).toggleClass('is-btn-b-appear');
+//        });
     });
 };
 
