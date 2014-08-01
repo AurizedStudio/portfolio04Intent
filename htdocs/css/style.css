@@ -4117,6 +4117,13 @@ input[type="button"].btn-block {
   display: none;
 }
 
+@media (max-width: 479px) {
+  .btn-a li,
+  .btn-b li {
+    float: none;
+    margin: 0 0 10px 0;
+  }
+}
 .btn-e {
   font-size: 18px;
 }
