@@ -3,6 +3,9 @@
 This is 4 pages portfolio site.  
 including [home](http://aurized-studio.jp/portfolio/Intent/) / [blog](http://aurized-studio.jp/portfolio/Intent/blog.html) / portfolio / [contact](http://aurized-studio.jp/portfolio/Intent/contact.html).
 
+Additional pages  
+[Layout master](http://aurized-studio.jp/portfolio/Intent/layout.html) / [jQuery script test](http://aurized-studio.jp/portfolio/Intent/script-test.html)
+
 ## Design
 
 This page is designed by Michael Reimer from [BEST PSD FREEBIES](http://www.bestpsdfreebies.com/).  
