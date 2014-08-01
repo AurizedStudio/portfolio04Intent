@@ -77,6 +77,7 @@ function slideMenu(){
 //    });
     menu.find('.btn-e-menu-sub').on('click', function(){
         $(this).find('ul').slideToggle();
+        $(this).toggleClass('is-btn-e-menu-sub');
     });
 };
 

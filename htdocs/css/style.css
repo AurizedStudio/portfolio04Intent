@@ -4118,7 +4118,7 @@ input[type="button"].btn-block {
 }
 
 .btn-e {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .btn-e-menubtn {
@@ -4131,12 +4131,39 @@ input[type="button"].btn-block {
   padding: 0;
   list-style: none;
 }
+.btn-e-menu a {
+  display: block;
+  background-color: #dfdfdf;
+  padding: 1em 0 1em 1em;
+}
+.btn-e-menu a:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  padding: 0 0 0 6px;
+  border-top: 6px transparent solid;
+  border-bottom: 6px transparent solid;
+  border-left: 10px #000 solid;
+}
 .btn-e-menu .btn-e-menu-sub {
   cursor: pointer;
 }
+.btn-e-menu .is-btn-e-menu-sub > a:before {
+  margin: 0 6px 0 -2px;
+  padding: 0;
+  border-top: 9px #adadad solid;
+  border-bottom: 2px transparent solid;
+  border-left: 6px transparent solid;
+  border-right: 6px transparent solid;
+}
 .btn-e-menu ul {
   display: none;
+  padding: 0;
   list-style: none;
+}
+.btn-e-menu ul li > a {
+  background-color: #464646;
 }
 
 /* 
