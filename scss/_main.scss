@@ -784,13 +784,70 @@
 }
 }
 /* スクリプトページ */
-.btn-a {
+.btn-a,
+.btn-b {
     @include clearfix();
     list-style: none;
     padding: 0;
     li {
         float: left;
         margin: 0 1em 0 0;
+    }
+}
+.is-btn-b-appear {
+    display: none;
+}
+.btn-e {
+    font-size: $font-size-large;
+}
+.btn-e-menubtn {
+    display: inline-block;
+//    margin: 0 0 1em 0;
+    cursor: pointer;
+}
+.btn-e-menu { // 親 ul
+    display: none;
+    padding: 0;
+    list-style: none;
+    a {
+        display: block;
+        background-color: $gray-lightest;
+        padding: 1em 0 1em 1em;
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 0;
+            padding: 0 0 0 6px;
+            border-top: 6px transparent solid;
+            border-bottom: 6px transparent solid;
+            border-left: 10px #000 solid;
+        }
+    }
+    .btn-e-menu-sub { // li
+        cursor: pointer;
+    }
+    .is-btn-e-menu-sub {
+        > a {
+            &:before {
+                margin: 0 6px 0 -2px;
+                padding: 0;
+                border-top: 9px $gray-lighter solid;
+                border-bottom: 2px transparent solid;
+                border-left: 6px transparent solid;
+                border-right: 6px transparent solid;
+            }
+        }
+    }
+    ul { // 第２階層 ul
+        display: none;
+        padding: 0;
+        list-style: none;
+        li {
+            > a {
+                background-color:  $gray;
+            }
+        }
     }
 }
 
