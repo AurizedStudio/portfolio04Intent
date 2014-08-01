@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>layout | Aurized Studio CODING Portrait04</title>
+<title>jQuery Script Test | Aurized Studio CODING Portrait04</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta property="og:title" content="Aurized Studio コーディング ポートフォリオ04">
@@ -27,7 +27,7 @@
 <script>window.html5 || document.write('<script src="js/html5shiv.js"><\/script>')</script>
 <![endif]-->
 </head>
-<body class="contact-page">
+<body class="script-page">
 <div class="text-center"><a class="sr-only sr-only-focusable" href="#main">Skip to CONTENTS</a></div>
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -67,14 +67,65 @@
 <div class="bg-pagetheme"></div>
 <div id="main" class="main">
     <div class="main-header">
-        <h1 class="main-header-h1">Layout file<br>
-            <small>Master file to create</small></h1>
+        <h1 class="main-header-h1">jQuery Script Test<br>
+            <small>Practice practice...</small></h1>
     </div>
     <div class="main-contents">
         <section>
-            <h2 class="sr-only">SomeTitle</h2>
-            <p>contents</p>
-            <p>contents</p>
+            <h2>ボタン</h2>
+            <ul class="btn-a">
+                <li><a class="btn btn-primary is-btn-a-click">ボタン click(fn)</a></li>
+                <li>
+                    <button class="btn btn-primary is-btn-a-on">ボタン on clcik selector</button>
+                </li>
+            </ul>
+            <ul class="btn-b">
+                <li><a class="btn btn-success is-btn-b-default">ボタン 変数割り当て</a></li>
+                <li class="is-btn-b-appear"><a class="btn btn-success">ボタン出現</a></li>
+            </ul>
+            <h2>チェックボックス/サブミット</h2>
+            <div class="btn-c">
+                <form>
+                    <div class="checkbox">
+                        <label for="btn-c-check-agree">
+                            <input type="checkbox" id="btn-c-check-agree">
+                            <a href="#">利用規約</a>に同意します。 </label>
+                    </div>
+                    <button type="submit" id="btn-c-submit" class="btn btn-primary btn-lg">SUBMIT</button>
+                </form>
+            </div>
+            <h2>インプット/サブミット</h2>
+            <div class="btn-d">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only" for="is-btn-d-mail">Email Address</label>
+                        <input type="email" class="form-control" id="is-btn-d-mail" placeholder="メールアドレス">
+                    </div>
+                    <button type="submit" id="is-btn-d-submit" class="btn btn-primary">SUBMIT</button>
+                </form>
+            </div>
+            <h2>スライドトグル</h2>
+            <div class="btn-e">
+                <p class="btn-e-menubtn"><span class="glyphicon glyphicon-align-justify"></span>メニューボタン</p>
+                <ul class="btn-e-menu">
+                    <li><a href="#">HOME</a></li>
+                    <li class="btn-e-menu-sub"><a>BLOG サブメニュー有り</a>
+                        <ul>
+                            <li><a href="#">Blog#1</a></li>
+                            <li><a href="#">Blog#2</a></li>
+                            <li><a href="#">Blog#3</a></li>
+                        </ul>
+                    </li>
+                    <li class="btn-e-menu-sub"><a>Portfolio サブメニュー有り</a>
+                        <ul>
+                            <li><a href="#">Portfolio01</a></li>
+                            <li><a href="#">Portfolio02</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <!-- / .btn-e --> 
         </section>
     </div>
 </div>
@@ -125,6 +176,7 @@
     </div>
 </footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script> 
+<script src="js/style.js"></script>
 </body>
 </html>
