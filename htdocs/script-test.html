@@ -94,6 +94,7 @@
                     <button type="submit" id="btn-c-submit" class="btn btn-primary btn-lg">SUBMIT</button>
                 </form>
             </div>
+            <!-- / .btn-c -->
             <h2>インプット/サブミット</h2>
             <div class="btn-d">
                 <form class="form-inline">
@@ -104,6 +105,7 @@
                     <button type="submit" id="is-btn-d-submit" class="btn btn-primary">SUBMIT</button>
                 </form>
             </div>
+            <!-- / .btn-d -->
             <h2>スライドトグル</h2>
             <div class="btn-e">
                 <p class="btn-e-menubtn"><span class="glyphicon glyphicon-align-justify"></span>メニューボタン</p>
@@ -125,7 +127,33 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <!-- / .btn-e --> 
+            <!-- / .btn-e -->
+            <h2>ドロップダウンメニュー</h2>
+            <h3>Bootstrapのコンポーネント使用</h3>
+            <div class="dropdown-menu-a">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-a-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="menu-a-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Link</a></li>
+                            <li><a href="#">Link2</a></li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdwon <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated Link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Another</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- / .dropdown-menu-a --> 
         </section>
     </div>
 </div>
@@ -177,6 +205,7 @@
 </footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script> 
+<script src="js/bootstrap.min.js"></script> 
 <script src="js/style.js"></script>
 </body>
 </html>
