@@ -19,12 +19,12 @@
 @import "buttons";
 
 // Components
-// @import "component-animations";
-// @import "dropdowns";
+@import "component-animations"; // collapse使用時に必要
+@import "dropdowns";
 // @import "button-groups";
 // @import "input-groups";
-// @import "navs";
-// @import "navbar";
+@import "navs";
+@import "navbar";
 // @import "breadcrumbs";
 // @import "pagination";
 // @import "pager";
