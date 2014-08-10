@@ -4986,10 +4986,16 @@ tbody.collapse.in {
   background-color: #464646;
 }
 
-.dropdown-menu-a .navbar {
+.dropdown-menu-a .navbar,
+.dropdown-menu-b .navbar {
   padding: 0;
 }
 
+@media (min-width: 1025px) {
+  .dropdown-menu-b .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
 /* 
  * 	.footer
  */
