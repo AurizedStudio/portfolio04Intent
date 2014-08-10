@@ -859,10 +859,18 @@
         }
     }
 }
-.dropdown-menu-a {
+.dropdown-menu-a,
+.dropdown-menu-b {
     .navbar {
         padding: 0;
     }
+}
+@media ( min-width: ($screen-iPadh + 1) ) { // 1025px PC版で効かせる
+.dropdown-menu-b {
+    .dropdown:hover .dropdown-menu {
+		display: block;
+	}
+}
 }
 
 /* 
