@@ -5,6 +5,7 @@ bntVari();
 chkSub();
 inpSub();
 slideMenu();
+superfish();
 
 // ボタンクリック
 function btnClick() {
@@ -79,6 +80,11 @@ function slideMenu(){
         $(this).find('ul').slideToggle();
         $(this).toggleClass('is-btn-e-menu-sub');
     });
+};
+
+// スーパーフィッシュドロップダウンメニュー
+function superfish(){
+    $('.sf-menu').superfish();
 };
 
 });
