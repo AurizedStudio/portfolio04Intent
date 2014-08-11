@@ -4937,6 +4937,11 @@ tbody.collapse.in {
     margin: 0 0 10px 0;
   }
 }
+.btn-c .checkbox input {
+  position: static;
+  margin: 0 4px 0 0;
+}
+
 .btn-e {
   font-size: 18px;
 }
@@ -4996,6 +5001,10 @@ tbody.collapse.in {
     display: block;
   }
 }
+.ie7 .dropdown-menu-b .dropdown:hover .dropdown-menu, .ie8 .dropdown-menu-b .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 /* 
  * 	.footer
  */

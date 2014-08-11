@@ -7352,6 +7352,7 @@ c/your_new_images/largetile.png
 c/your_new_images/mediumtile.png
 c/your_new_images/smalltile.png
 c/your_new_images/widetile.png
+<<<<<<< HEAD
 accessibility/index.html
 accessibility/index_files/blinking.html
 accessibility/index_files/index_criteria.html
@@ -7468,6 +7469,9 @@ accessibility/contact_files/images/win_open_list.gif
 accessibility/contact_files/js/wi_result.js
 <<<<<<< HEAD
 =======
+=======
+accessibility/
+>>>>>>> develop
 node_modules/grunt-autoprefixer/node_modules/autoprefixer/node_modules/caniuse-db/features-json/atob-btoa.json
 node_modules/grunt-autoprefixer/node_modules/autoprefixer/node_modules/caniuse-db/features-json/css-appearance.json
 node_modules/grunt-autoprefixer/node_modules/autoprefixer/node_modules/caniuse-db/features-json/custom-elements.json

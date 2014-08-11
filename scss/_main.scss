@@ -806,6 +806,14 @@
     }
 }
 }
+.btn-c {
+    .checkbox {
+        input {
+            position: static;
+            margin: 0 4px 0 0;
+        }
+    }
+}
 .btn-e {
     font-size: $font-size-large;
 }
@@ -865,12 +873,19 @@
         padding: 0;
     }
 }
-@media ( min-width: ($screen-iPadh + 1) ) { // 1025px PC版で効かせる
-.dropdown-menu-b {
-    .dropdown:hover .dropdown-menu {
-		display: block;
-	}
+// ドロップダウンメニューホバー
+@mixin dropdown-hover {
+    .dropdown-menu-b {
+        .dropdown:hover .dropdown-menu {
+		    display: block;
+	    }
+    }
 }
+@media ( min-width: ($screen-iPadh + 1) ) { // 1025px PC版で効かせる
+@include dropdown-hover;
+}
+.ie7, .ie8 {
+    @include dropdown-hover;
 }
 
 /* 

@@ -25,6 +25,7 @@
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script>window.html5 || document.write('<script src="js/html5shiv.js"><\/script>')</script>
+<script src="js/respond.min.js"></script>
 <![endif]-->
 </head>
 <body class="script-page">
@@ -87,9 +88,7 @@
             <div class="btn-c">
                 <form>
                     <div class="checkbox">
-                        <label for="btn-c-check-agree">
-                            <input type="checkbox" id="btn-c-check-agree">
-                            <a href="#">利用規約</a>に同意します。 </label>
+                        <input type="checkbox" id="btn-c-check-agree" title="利用規約既読チェックボタン"><a href="#">利用規約</a>に同意します。
                     </div>
                     <button type="submit" id="btn-c-submit" class="btn btn-primary btn-lg">SUBMIT</button>
                 </form>
@@ -133,7 +132,7 @@
             <div class="dropdown-menu-a">
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-a-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-a-collapse" title="メニュー表示ボタン"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                     </div>
                     <div class="collapse navbar-collapse" id="menu-a-collapse">
                         <ul class="nav navbar-nav">
@@ -155,10 +154,10 @@
             </div>
             <!-- / .dropdown-menu-a -->
             <h3>Bootstrapのコンポーネント使用 マウスホバー版（ブラウザサイズ1025px以上）</h3>
-            <div class="dropdown-menu-b"> 
+            <div class="dropdown-menu-b">
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-b-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-b-collapse" title="メニュー表示ボタン"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                     </div>
                     <div class="collapse navbar-collapse" id="menu-b-collapse">
                         <ul class="nav navbar-nav">
@@ -189,7 +188,8 @@
                         </ul>
                     </div>
                 </nav>
-            </div><!-- / .dropdown-menu-b -->
+            </div>
+            <!-- / .dropdown-menu-b --> 
         </section>
     </div>
 </div>
