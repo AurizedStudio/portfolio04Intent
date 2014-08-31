@@ -968,6 +968,17 @@
 	    transition: none;
     }
 }
+// タッチイベント
+.touch {
+    li {
+        margin: 0 0 10px 0;
+        padding: 4px;
+        &.is-touch-hover {
+            color: $brand-success;
+            font-weight: bold;
+        }
+    }
+}
 
 /* 
  * 	.footer
