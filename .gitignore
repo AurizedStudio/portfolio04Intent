@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .sass-cache/23527bcfa330f82b7cd828d7f18f96276a8dfc25/_alerts.scssc
 .sass-cache/23527bcfa330f82b7cd828d7f18f96276a8dfc25/_badges.scssc
 .sass-cache/23527bcfa330f82b7cd828d7f18f96276a8dfc25/_breadcrumbs.scssc
@@ -7749,4 +7750,11 @@ node_modules/grunt-webfont/node_modules/svgicons2svgfont/tests/expected/original
 node_modules/grunt-webfont/node_modules/svgicons2svgfont/tests/expected/originalicons7.svg
 node_modules/grunt/node_modules/nopt/.gitignore
 >>>>>>> develop
+=======
+.sass-cache/
+node_modules/
+>>>>>>> develop
 _theme.scssc
+accessibility/
+c/
+

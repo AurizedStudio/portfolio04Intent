@@ -6,6 +6,7 @@ chkSub();
 inpSub();
 slideMenu();
 superfish();
+touchEvent();
 
 // ボタンクリック
 function btnClick() {
@@ -85,6 +86,22 @@ function slideMenu(){
 // スーパーフィッシュドロップダウンメニュー
 function superfish(){
     $('.sf-menu').superfish();
+};
+
+// タッチイベント
+function touchEvent(){
+var touchLi = $('.touch ul li');
+touchLi.on({
+	'touchstart':function(){
+		console.log('start');
+		$(this).addClass('is-touch-hover');
+	},
+	'touchend':function(){
+		console.log('end');
+		$(this).removeClass('is-touch-hover');
+	}
+});
+
 };
 
 });

@@ -5085,6 +5085,15 @@ tbody.collapse.in {
           transition: none;
 }
 
+.touch li {
+  margin: 0 0 10px 0;
+  padding: 4px;
+}
+.touch li.is-touch-hover {
+  color: #35a54a;
+  font-weight: bold;
+}
+
 /* 
  * 	.footer
  */
